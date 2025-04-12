@@ -58,5 +58,6 @@ jobs:
     - name: Update Kubernetes Deployment on EKS
       run: |
         aws eks --region $AWS_REGION update-kubeconfig --name my-cluster
+        kubectl apply -f aws-secrets.yaml
         kubectl apply -f deployment/deployment.yaml
         kubectl rollout status deployment/product-service
