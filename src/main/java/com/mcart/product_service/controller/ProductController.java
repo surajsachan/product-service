@@ -19,7 +19,7 @@ public class ProductController {
         return "Product saved successfully!";
     }
     @GetMapping("/{id}")
-    public Product getProduct(@PathVariable String id) {
+    public Product getProduct(@PathVariable int id) {
         return productService.getProduct(id);
     }
     @DeleteMapping("/{id}")
