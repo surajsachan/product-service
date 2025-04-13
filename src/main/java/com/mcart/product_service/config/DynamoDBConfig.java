@@ -14,7 +14,6 @@ public class DynamoDBConfig {
                 .region(Region.US_EAST_1)
                 .credentialsProvider(StaticCredentialsProvider.create(
                         AwsBasicCredentials.create("AKIAYSE4NXCBIE2B4Z4T", "WDa22eajZ88j6YXlsQHd/qtwj/golEkMtI8yD3zQ")
-//                        AwsBasicCredentials.create("your-access-key", "your-secret-key")
                 ))
                 .build();
     }
