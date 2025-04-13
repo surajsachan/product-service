@@ -13,7 +13,7 @@ public class ProductService {
     public void saveProduct(Product product) {
         productRepository.save(product);
     }
-    public Product getProduct(String productId) {
+    public Product getProduct(int productId) {
         return productRepository.findById(productId);
     }
     public void deleteProduct(String productId) {

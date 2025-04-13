@@ -22,7 +22,7 @@ public class ProductRepository {
     public void save(Product product) {
         productTable.putItem(product);
     }
-    public Product findById(String productId) {
+    public Product findById(int productId) {
         return productTable.getItem(r -> r.key(k -> k.partitionValue(productId)));
     }
     public void delete(String productId) {
